@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">Pheramor_Android_Developer_Position_Assessment</string>
+    <!--Titles-->
+    <string name="login_title">Login</string>
+    <string name="signup_title">Sign Up</string>
+
+    <!--Welcome messages-->
+    <string name="splash_welcome_txt">Welcome to \nPheramor</string>
+    <string name="login_welcome_txt">Hello there !\nWelcome Back</string>
+    <string name="signup_welcome_txt">Hello there !\nWelcome to Pheramor</string>
+    <string name="register_activity_title">Welcome to Pheramor</string>
+    <string name="little_more_about_you">Little more \nAbout YOU.</string>
+    <string name="learn_more_about_you">Lets learn more about YOU.</string>
+
+
+    <!--Button labels-->
+    <string name="login_btn_label">Login</string>
+    <string name="signup_btn_label">Sign Up</string>
+    <string name="continue_btn_label">Continue</string>
+    <string name="submit_btn_label">Submit</string>
+
+    <string name="login_label">" Login"</string>
+    <string name="signup_label">" Sign Up"</string>
+
+    <string name="get_started_btn_label">Get Started</string>
+
+    <!--Edit Text hints-->
+    <string name="email_address_hint">Email Address</string>
+    <string name="full_name_hint">Full Name</string>
+    <string name="password_hint">Password</string>
+    <string name="zip_code_hint">12345</string>
+    <string name="height_hint">172</string>
+    <string name="mm_dd_yyyy">Date of Birth</string>
+
+
+    <!--Misc texts-->
+    <string name="forgot_password">Forgot password?</string>
+    <string name="no_account">Don\’t have an account?</string>
+    <string name="have_account">Have an account?</string>
+    <string name="divider_or">OR</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="zipcode">Zipcode: </string>
+    <string name="height">Height</string>
+    <string name="gender">Gender</string>
+    <string name="d_o_b">D.o.B:</string>
+    <string name="dob_dialog">Date of Birth</string>
+    <string name="interests">Your Interests</string>
+    <string name="what_gender_excites_you">Gender that excites You!</string>
+    <string name="both">Both</string>
+    <string name="age_limit">Age Limit your are Interested in:</string>
+    <string name="min_age">18</string>
+    <string name="max_age">80</string>
+    <string name="race">Race</string>
+    <string name="religion">Religion</string>
+    <string name="ethnicity">Ethnicity (Optional)</string>
+    <string name="religion_spinner">Religion (Optional)</string>
+    <string name="upload_profile_picture">Profile Picture</string>
+    <string name="from_gallery">From Gallery</string>
+    <string name="from_camera">From Camera</string>
+    <string name="upload">UPLOAD</string>
+    <string name="gender_label">Gender:</string>
+    <string name="age">Age:</string>
+    <string name="age_hint">Age</string>
+    <string name="height_label">Height:</string>
+    <string name="ethnicity_label">Ethnicity:</string>
+    <string name="religion_label">Religion:</string>
+    <string name="email">email@email.com</string>
+
+    <!--Validation Error Messages-->
+    <string name="fullname_error">Please enter your First and Last Name</string>
+    <string name="email_error">Invalid Email Format</string>
+    <string name="password_error">Invalid Password Format.\nMust be 8 Characters long, must contain 1 UpperCase letter, 1 LowerCase letter, 1 Numeric digit and 1 Special Character</string>
+    <string name="zipcode_error">Invalid Zip-code</string>
+
+
+</resources>

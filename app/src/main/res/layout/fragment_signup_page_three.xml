@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/containerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/container_layout_margin">
+
+        <TextView
+            android:id="@+id/signup_little_more_about_you"
+            style="@style/LabelStyle"
+            android:layout_below="@id/signup_title"
+            android:fontFamily="@font/sf_pro_display_medium"
+            android:text="@string/interests"
+            android:layout_marginBottom="16dp"
+            android:textColor="@color/orange" />
+
+        <LinearLayout
+            android:id="@+id/interest_gender_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_interested_gender"
+                style="@style/TextLabelStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/what_gender_excites_you"
+                android:textSize="22sp" />
+
+            <RadioGroup
+                android:id="@+id/rg_gender_interest"
+                style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+                android:layout_width="match_parent"
+                android:layout_marginTop="16dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/male_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/male"
+                    android:textSize="22sp" />
+
+                <RadioButton
+                    android:id="@+id/female_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/female"
+                    android:textSize="22sp" />
+
+                <RadioButton
+                    android:id="@+id/both_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/both"
+                    android:textSize="22sp" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/age_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/interest_gender_layout"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_age"
+                style="@style/TextLabelStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/age_limit"
+                android:textSize="22sp" />
+
+            <LinearLayout
+                android:id="@+id/max_min_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <biz.borealis.numberpicker.NumberPicker
+                    android:id="@+id/np_age_min"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1" />
+
+                <biz.borealis.numberpicker.NumberPicker
+                    android:id="@+id/np_age_max"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/race_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/age_layout"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_race"
+                style="@style/TextLabelStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ethnicity"
+                android:textSize="22sp" />
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/race_spinner"
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/btn_dropdown"
+                android:clickable="false"
+                android:hint="@string/race"
+                android:inputType="none"
+                android:longClickable="false"
+                android:textSize="22sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/religion_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/race_layout"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_religion"
+                style="@style/TextLabelStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/religion_spinner"
+                android:textSize="22sp" />
+
+            <Spinner
+                android:id="@+id/religion_spinner"
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/btn_dropdown"
+                android:clickable="false"
+                android:hint="@string/religion"
+                android:inputType="none"
+                android:longClickable="false" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_continue"
+            style="@style/SolidButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/religion_layout"
+            android:layout_marginTop="16dp"
+            android:text="@string/continue_btn_label" />
+
+    </RelativeLayout>
+
+</layout>
